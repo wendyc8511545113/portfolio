@@ -22,7 +22,7 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Wendy Caffey"
 description              : "Leveraging technology and education."
-url                      : "https://github.com/wendyc8511545113" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://wendyc8511545113.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/portfolio" # the subpath of your site, e.g. "/blog"
 repository               : "wendyc8511545113/portfolio" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
