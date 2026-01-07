@@ -43,17 +43,18 @@ header h1 {
 .profile-photo-container {
   display: flex;
   justify-content: center; /* centers the photo horizontally */
-  margin: 2rem 0;          /* space above and below the photo */
+  margin: 1.5rem 0;       /* space above and below the photo */
 }
 
 .profile-photo {
-  width: 150px;            /* size of the photo */
-  height: 150px;
+  width: 96px;             /* ~1 inch */
+  height: 96px;            /* ~1 inch */
   object-fit: cover;       /* crops and scales image to fit */
-  border-radius: 50%;      /* makes it circular */
-  border: 4px solid #2e8b57; /* green accent border */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* subtle shadow */
+  border-radius: 50%;      /* circular */
+  border: 3px solid #2e8b57; /* green accent border */
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1); /* subtle shadow */
 }
+
 
 
 /* Navbar / Dropdown */
