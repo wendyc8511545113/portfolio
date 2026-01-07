@@ -1,6 +1,3 @@
-# portfolio
-My minimalist portfolio site.
-
 # Wendy Caffey Portfolio Website
 
 Welcome to my personal portfolio website! This repository contains all the files needed to run my minimalist portfolio site with green accents, built from scratch using HTML, CSS, and JavaScript.
