@@ -21,34 +21,26 @@ a:hover {
   color: #3cb371; /* lighter green on hover */
 }
 
-/* Header: name left, photo right, photo still overlaps first section */
+/* Header: name left, photo right, photo overlaps first section */
 .header-section {
   position: relative;
-  background: #e6f2e6;
-  padding: 2rem 2rem 4rem 2rem;   /* extra bottom padding for overlap */
+  background: #e6f2e6; /* soft light green */
+  padding: 2rem 2rem 4rem 2rem; /* extra bottom padding for overlap */
   display: flex;
   align-items: center;
-  justify-content: center; /* center header content horizontally */
-  gap: 1rem;               /* space between name and photo */
+  justify-content: flex-start; /* name left, photo right */
+  gap: 2rem; /* space between name and photo */
 }
 
 .header-section .intro-header {
-  text-align: left;        /* left-align the name/subtitle */
-  z-index: 5;              /* above header background */
+  text-align: left; /* left-align the name/subtitle */
+  z-index: 5; /* above header background */
   display: flex;
-  flex-direction: column; /* keeps h1 above h2 */
-  justify-content: center; /* optional: centers text vertically in its own column */
+  flex-direction: column; /* h1 above h2 */
+  justify-content: center; /* center vertically */
   max-width: 400px; /* prevents text from stretching too wide */
 }
 
-.header-section .profile-photo-container {
-  position: relative;
-  top: 0;                  /* keep photo overlapping About section */
-  margin-bottom: -48px;    /* still overlaps section below */
-  z-index: 15;
-}
-
-/* Optional background image */
 .header-section .header-bg {
   position: absolute;
   top: 0;
@@ -57,7 +49,7 @@ a:hover {
   height: 100%;
   background-size: cover;
   background-position: center;
-  opacity: 0.15; /* subtle, not overpowering */
+  opacity: 0.15; /* subtle background image */
   z-index: 0;
 }
 
@@ -66,8 +58,8 @@ a:hover {
   color: #2e8b57; /* forest green */
   font-size: 2.5rem;
   margin: 0;
-  z-index: 5;
   position: relative;
+  z-index: 5;
 }
 
 .header-section .intro-header .subheading {
@@ -75,46 +67,27 @@ a:hover {
   font-size: 1.2rem;
   margin-top: 0.5rem;
   font-weight: normal;
+  position: relative;
   z-index: 5;
-  position: relative;
 }
 
-/* Profile Photo (overlapping header & first section) */
+/* Profile Photo (soft-edge diamond shape) */
 .profile-photo-container {
   display: flex;
-  justify-content: center;
+  justify-content: center;   /* horizontally center */
   position: relative;
-  top: -48px;            /* half the photo height to overlap */
-  margin-bottom: -48px;
+  top: -48px;                /* overlap About section */
+  margin-bottom: -48px;      /* reduce extra space */
   z-index: 15;
+  height: 96px;              /* matches photo height */
+  align-items: center;       /* vertical alignment */
 }
 
 .profile-photo {
-  width: 96px;           /* 1 inch */
+  width: 96px;               /* 1 inch */
   height: 96px;
   object-fit: cover;
-  border-radius: 50%;    /* circular */
-  border: 3px solid #2e8b57;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-}
-
-
-
-/* Profile Photo */
-.profile-photo-container {
-  display: flex;
-  justify-content: center;   /* centers the photo */
-  position: relative;
-  top: -48px;               /* move up to overlap header (~half the photo size) */
-  margin-bottom: -48px;     /* reduce extra space created by moving it up */
-  z-index: 15;              /* make sure it sits above header */
-}
-
-.profile-photo {
-  width: 96px;              /* 1 inch */
-  height: 96px;
-  object-fit: cover;
-  border-radius: 50%;       /* circular */
+  border-radius: 20% / 40%;  /* soft-edge diamond shape */
   border: 3px solid #2e8b57; /* green accent border */
   box-shadow: 0 3px 8px rgba(0,0,0,0.1);
 }
@@ -126,8 +99,8 @@ main {
 
 /* About Me Section */
 #about {
- text-align: center;
-  padding: 5rem 2rem 4rem 2rem; /* extra top padding so profile photo doesn't cover text */
+  text-align: center;
+  padding: 5rem 2rem 4rem 2rem; /* extra top padding for overlap */
   background: #f9fff9;           /* subtle light green background */
 }
 
