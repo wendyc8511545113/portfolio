@@ -25,7 +25,7 @@ a:hover {
 .header-section {
   position: relative;
   background: #e6f2e6;          /* soft light green */
-  padding: 2rem 2rem 1.75rem 2rem; /* extra bottom padding for overlap, TOP RIGHT BOTTOM LEFT */
+  padding: 2rem 2rem 1.75rem 2rem; /* TOP RIGHT BOTTOM LEFT padding */
   display: flex;
   align-items: center;   /* vertically center text */
   justify-content: flex-start; /* text left */
@@ -103,8 +103,8 @@ main {
 /* About Me Section */
 #about {
   text-align: center;
-  padding: 5rem 2rem 4rem 2rem; /* extra top padding for overlap */
-  background: #f9fff9;           /* subtle light green background */
+  padding: 5rem 2rem 4rem 2rem; /* TOP RIGHT BOTTOM LEFT padding */
+  background: #ffffff;          
 }
 
 #about h2 {
@@ -123,6 +123,7 @@ main {
 /* Portfolio Section */
 #portfolio {
   padding: 4rem 2rem;
+  background: #f9fff9;
 }
 
 #portfolio h2 {
@@ -159,28 +160,32 @@ main {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-/* Contact Section */
-#contact {
-  text-align: center;
-  padding: 4rem 2rem;
-  background: #f9fff9;
-}
-
-#contact h2 {
-  color: #2e8b57;
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-#contact p {
-  font-size: 1.1rem;
-}
-
 /* Footer */
 footer {
   text-align: center;
-  padding: 1rem;
-  background: #f0f0f0;
-  color: #555;
+  padding: 2rem 1rem;
+  background: #e6f2e6; /* same as header */
+  color: #2e8b57;
   margin-top: 2rem;
 }
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.footer-icons a {
+  color: #2e8b57;
+  text-decoration: none;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.footer-icons a:hover {
+  color: #3cb371;
+  transform: scale(1.15);
+}
+
+
