@@ -6,16 +6,19 @@ body {
   padding: 0;
   background: #ffffff;
   color: #222;
+  scroll-behavior: smooth; /* smooth scrolling */
 }
 
 /* Links with green accent */
 a {
   color: #2e8b57; /* forest green */
   text-decoration: none;
+  transition: color 0.2s;
 }
 
 a:hover {
   text-decoration: underline;
+  color: #3cb371; /* lighter green on hover */
 }
 
 /* Header */
@@ -25,57 +28,18 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 header h1 {
   color: #2e8b57;
   margin: 0;
+  font-size: 1.8rem;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-  margin: 0;
-  padding: 0;
-}
-
-/* Main sections */
-main {
-  padding: 2rem;
-}
-
-section {
-  margin-bottom: 3rem;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #f0f0f0;
-  color: #555;
-}
-
-/* Portfolio grid */
-.portfolio-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.5rem;
-}
-
-.portfolio-item {
-  border: 2px solid #2e8b57; /* green accent */
-  border-radius: 10px;
-  padding: 1rem;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.portfolio-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-/* Dropdown menu */
+/* Navbar / Dropdown */
 nav ul.dropdown {
   list-style: none;
   margin: 0;
@@ -118,3 +82,92 @@ nav ul.dropdown li:hover ul.dropdown-menu {
   display: block;
 }
 
+/* Main sections */
+main {
+  padding: 2rem;
+}
+
+/* About Me Section */
+#about {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #f9fff9; /* subtle light green background */
+}
+
+#about h2 {
+  color: #2e8b57;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#about p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* Portfolio Section */
+#portfolio {
+  padding: 4rem 2rem;
+}
+
+#portfolio h2 {
+  color: #2e8b57;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+#portfolio p {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+/* Portfolio grid */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.portfolio-item {
+  border: 2px solid #2e8b57;
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+  background: #ffffff;
+  text-align: center;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Contact Section */
+#contact {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #f9fff9;
+}
+
+#contact h2 {
+  color: #2e8b57;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#contact p {
+  font-size: 1.1rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #f0f0f0;
+  color: #555;
+  margin-top: 2rem;
+}
