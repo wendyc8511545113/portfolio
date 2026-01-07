@@ -163,24 +163,24 @@ main {
 /* Footer */
 footer {
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 2rem 1rem; /* TOP/BOTTOM, LEFT/RIGHT padding */
   background: #e6f2e6; /* same as header */
   color: #2e8b57;
-  margin-top: 2rem;
+  margin-top: 2rem; /* space above footer */
 }
 
 .footer-icons {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
-  font-size: 1.5rem;
-  margin-bottom: 0.75rem;
+  gap: 1.5rem; /* space between icons */
+  font-size: 1.5rem; /* icon size */
+  margin-bottom: 0.75rem; */ space below icon */
 }
 
 .footer-icons a {
   color: #2e8b57;
-  text-decoration: none;
-  transition: transform 0.2s, color 0.2s;
+  text-decoration: none; */ removes the default underline for links for icon */ 
+  transition: transform 0.2s, color 0.2s; */ hover effect and animates icon */
 }
 
 .footer-icons a:hover {
