@@ -1,4 +1,7 @@
-/* Base styles */
+/* =========================
+   1. Base Styles
+========================= */
+
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -6,10 +9,9 @@ body {
   padding: 0;
   background: #ffffff;
   color: #222;
-  scroll-behavior: smooth; /* smooth scrolling */
+  scroll-behavior: smooth;
 }
 
-/* Links with green accent */
 a {
   color: #2e8b57; /* forest green */
   text-decoration: none;
@@ -17,29 +19,92 @@ a {
 }
 
 a:hover {
+  color: #3cb371; /* lighter green */
   text-decoration: underline;
-  color: #3cb371; /* lighter green on hover */
 }
 
-/* Header: name stays left, text aligned normally */
+/* =========================
+   2. Header for index.html
+========================= */
+
 .header-section {
   position: relative;
-  background: #e6f2e6;          /* soft light green */
-  padding: 2rem 2rem 1.75rem 2rem; /* TOP RIGHT BOTTOM LEFT padding */
+  background: #e6f2e6; /* soft light green */
+  padding: 2rem 2rem 1.75rem 2rem;
   display: flex;
-  align-items: center;   /* vertically center text */
-  justify-content: flex-start; /* text left */
-  gap: 2rem;             /* space between text and photo placeholder (not used now) */
-  overflow: visible;     /* allows photo to overflow */
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  overflow: visible;
 }
 
-/* Header: Home Icon for additional pages */
+.header-section .intro-header {
+  text-align: left;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 400px;
+}
+
+.header-section .intro-header h1 {
+  color: #2e8b57;
+  font-size: 2.5rem;
+  margin: 0;
+  position: relative;
+  z-index: 5;
+}
+
+.header-section .intro-header .subheading {
+  color: #2e8b57;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  font-weight: normal;
+  position: relative;
+  z-index: 5;
+}
+
+/* Profile photo */
+.profile-photo-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -32px;
+  z-index: 15;
+}
+
+.profile-photo {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  border-radius: 20% / 40%;
+  border: 3px solid #2e8b57;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+/* Header background overlay */
+.header-section .header-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.15;
+  z-index: 0;
+}
+
+/* =========================
+   3. Header Home Icon
+========================= */
+
 .header-home-icon {
   position: absolute;
-  right: 2rem;        /* distance from right edge */
-  top: 50%;           /* vertical center */
+  right: 2rem;
+  top: 50%;
   transform: translateY(-50%);
-  z-index: 20;        /* above header background */
+  z-index: 20;
 }
 
 .header-home-icon a {
@@ -61,79 +126,18 @@ a:hover {
   transform: translateY(-2px);
 }
 
+/* =========================
+   4. Main Sections (Index)
+========================= */
 
-/* Text column */
-.header-section .intro-header {
-  text-align: left;
-  z-index: 5;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 400px;
-}
-
-/* Optional header background */
-.header-section .header-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  opacity: 0.15;
-  z-index: 0;
-}
-
-/* Title and Subtitle */
-.header-section .intro-header h1 {
-  color: #2e8b57;
-  font-size: 2.5rem;
-  margin: 0;
-  position: relative;
-  z-index: 5;
-}
-
-.header-section .intro-header .subheading {
-  color: #2e8b57;
-  font-size: 1.2rem;
-  margin-top: 0.5rem;
-  font-weight: normal;
-  position: relative;
-  z-index: 5;
-}
-
-/* Profile Photo: centered horizontally, partially overlapping header */
-.profile-photo-container {
-  position: absolute;      /* absolute positioning relative to header */
-  left: 50%;               /* horizontal center */
-  transform: translateX(-50%); /* center properly */
-  bottom: -32px;           /* pushes 1/3 of photo below header */
-  z-index: 15;
-}
-
-/* Soft-edge diamond profile photo */
-.profile-photo {
-  width: 96px;             /* 1 inch */
-  height: 96px;
-  object-fit: cover;
-  border-radius: 20% / 40%; /* soft-edge diamond shape */
-  border: 3px solid #2e8b57;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-}
-
-
-
-/* Main sections */
 main {
   padding: 2rem;
 }
 
-/* About Me Section */
 #about {
   text-align: center;
-  padding: 5rem 2rem 4rem 2rem; /* TOP RIGHT BOTTOM LEFT padding */
-  background: #ffffff;          
+  padding: 5rem 2rem 4rem 2rem;
+  background: #ffffff;
 }
 
 #about h2 {
@@ -149,7 +153,6 @@ main {
   line-height: 1.8;
 }
 
-/* Portfolio Section */
 #portfolio {
   padding: 4rem 2rem;
   background: #f9fff9;
@@ -189,20 +192,23 @@ main {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-/* Footer */
+/* =========================
+   5. Footer
+========================= */
+
 footer {
   text-align: center;
-  padding: 2rem 1rem; /* TOP/BOTTOM, LEFT/RIGHT padding */
-  background: #e6f2e6; /* same as header */
+  padding: 2rem 1rem;
+  background: #e6f2e6;
   color: #2e8b57;
-  margin-top: 2rem; /* space above footer */
+  margin-top: 2rem;
 }
 
 .footer-icons {
   display: flex;
   justify-content: center;
-  gap: 1.5rem; /* space between icons */
-  margin-bottom: 0.75rem; /* space below icons */
+  gap: 1.5rem;
+  margin-bottom: 0.75rem;
 }
 
 .footer-icons a {
@@ -214,7 +220,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-decoration: none; /* removes underline */
+  text-decoration: none;
   font-size: 1.2rem;
   transition: transform 0.2s ease, background-color 0.2s ease;
 }
@@ -224,80 +230,14 @@ footer {
   transform: translateY(-2px);
 }
 
-/* ---------- Project Page Specific ---------- */
+/* =========================
+   6. Project Page Specific
+========================= */
 
-/* Header shrink & hide profile photo on scroll */
+/* Header: shrink on scroll, home icon on right, profile photo disappears */
 .project-header {
   position: relative;
-  background: #e6f2e6;   /* light green */
-  padding: 4rem 2rem 2rem 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  overflow: hidden;
-}
-
-.project-header .header-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  opacity: 0.15;
-  z-index: 0;
-}
-
-.project-header .intro-header {
-  position: relative;
-  z-index: 5;
-}
-
-.project-header .divider {
-  width: 60px;
-  border: 2px solid #2e8b57;
-  margin: 0.5rem auto;
-  border-radius: 2px;
-}
-
-.project-header .subheading {
-  color: #2e8b57;
-  font-size: 1.2rem;
-  margin-top: 0.5rem;
-}
-
-.project-header.shrink .profile-photo-container {
-  display: none;
-}
-
-/* Project main sections */
-.project-description, .project-embed {
-  padding: 4rem 2rem;
-  background: #ffffff;
-  max-width: 900px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.project-description h2,
-.project-embed h2 {
-  color: #2e8b57;
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.embed-container {
-  margin-top: 2rem;
-}
-
-/* ---------- Project Page Specific ---------- */
-
-/* Header: name + home icon + profile photo behavior on scroll */
-.project-header {
-  position: relative;
-  background: #e6f2e6;   /* light green */
+  background: #e6f2e6;
   padding: 2rem 2rem 4rem 2rem;
   display: flex;
   align-items: center;
@@ -306,12 +246,10 @@ footer {
   transition: padding 0.3s ease;
 }
 
-/* Shrink header on scroll */
 .project-header.shrink {
   padding: 0.8rem 2rem;
 }
 
-/* Header text */
 .project-header .intro-header h1 {
   color: #2e8b57;
   font-size: 2.5rem;
@@ -319,28 +257,24 @@ footer {
   transition: font-size 0.3s ease;
 }
 
-/* Shrink title on scroll */
 .project-header.shrink .intro-header h1 {
   font-size: 1.8rem;
 }
 
-/* Profile photo: centered horizontally, partially overlapping header */
 .project-header .profile-photo-container {
   position: absolute;
   left: 50%;
-  bottom: -32px; 
+  bottom: -32px;
   transform: translateX(-50%);
   z-index: 15;
   transition: opacity 0.3s ease, bottom 0.3s ease;
 }
 
-/* Hide photo on scroll */
 .project-header.shrink .profile-photo-container {
   opacity: 0;
   bottom: 0;
 }
 
-/* Soft-edge diamond profile photo */
 .project-header .profile-photo {
   width: 96px;
   height: 96px;
@@ -352,7 +286,7 @@ footer {
 
 /* Home icon */
 .project-header .header-home-icon {
-  position: relative; /* stays on right in flex layout */
+  position: relative;
   z-index: 20;
 }
 
@@ -376,12 +310,42 @@ footer {
 }
 
 /* Project main sections */
-.project-description, .project-embed {
+.project-header,
+.project-description,
+.project-embed {
+  text-align: center;
+}
+
+.project-header {
+  flex-direction: column;
+}
+
+.project-header .divider {
+  width: 100px;
+  border: 2px solid #2e8b57;
+  margin: 1rem auto;
+  border-radius: 2px;
+}
+
+.project-header .highlights {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* Project description and embed sections */
+.project-description {
   padding: 4rem 2rem;
-  background: #ffffff; /* or light green if needed */
+  background: #f9fff9;
   max-width: 900px;
   margin: 0 auto;
-  text-align: center;
+}
+
+.project-embed {
+  padding: 4rem 2rem;
+  background: #ffffff;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .project-description h2,
