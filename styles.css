@@ -173,19 +173,24 @@ footer {
   display: flex;
   justify-content: center;
   gap: 1.5rem; /* space between icons */
-  font-size: 1.5rem; /* icon size */
-  margin-bottom: 0.75rem; */ space below icon */
+  margin-bottom: 0.75rem; /* space below icon */
 }
 
 .footer-icons a {
-  color: #2e8b57;
-  text-decoration: none; */ removes the default underline for links for icon */ 
-  transition: transform 0.2s, color 0.2s; */ hover effect and animates icon */
+  width: 44px;
+  height: 44px;
+  background-color: #2e8b57;
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none; /* removes underline */
+  font-size: 1.2rem;
+  transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
 .footer-icons a:hover {
-  color: #3cb371;
-  transform: scale(1.15);
+  background-color: #3cb371;
+  transform: translateY(-2px);
 }
-
-
