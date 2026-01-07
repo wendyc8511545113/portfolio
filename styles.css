@@ -23,38 +23,38 @@ a:hover {
 
 /* Header */
 header {
-  background: #f0f0f0;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  background: #e6f2e6; /* soft light green instead of grey */
+  padding: 2rem 0;      /* more vertical space for modern look */
+  text-align: center;   /* center the content */
+  position: relative;   /* needed for profile photo overlap */
+  z-index: 10;
 }
 
 header h1 {
-  color: #2e8b57;
+  color: #2e8b57;       /* forest green */
   margin: 0;
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
+
 
 /* Profile Photo */
 .profile-photo-container {
   display: flex;
-  justify-content: center; /* centers the photo horizontally */
-  margin: 1.5rem 0;       /* space above and below the photo */
+  justify-content: center;   /* centers the photo */
+  position: relative;
+  top: -48px;               /* move up to overlap header (~half the photo size) */
+  margin-bottom: -48px;     /* reduce extra space created by moving it up */
+  z-index: 15;              /* make sure it sits above header */
 }
 
 .profile-photo {
-  width: 96px;             /* ~1 inch */
-  height: 96px;            /* ~1 inch */
-  object-fit: cover;       /* crops and scales image to fit */
-  border-radius: 50%;      /* circular */
+  width: 96px;              /* 1 inch */
+  height: 96px;
+  object-fit: cover;
+  border-radius: 50%;       /* circular */
   border: 3px solid #2e8b57; /* green accent border */
-  box-shadow: 0 3px 8px rgba(0,0,0,0.1); /* subtle shadow */
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
 }
-
 
 
 /* Navbar / Dropdown */
@@ -107,9 +107,9 @@ main {
 
 /* About Me Section */
 #about {
-  text-align: center;
-  padding: 4rem 2rem;
-  background: #f9fff9; /* subtle light green background */
+ text-align: center;
+  padding: 5rem 2rem 4rem 2rem; /* extra top padding so profile photo doesn't cover text */
+  background: #f9fff9;           /* subtle light green background */
 }
 
 #about h2 {
