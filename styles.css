@@ -26,12 +26,8 @@ a:hover {
   position: relative;
   background: #e6f2e6; /* soft light green if no image */
   padding: 4rem 2rem 2rem 2rem; /* more top padding for modern feel */
-  display: flex;
-  justify-content: space-between;
-  align-items: center; 
-  /*
   text-align: center;
-  overflow: hidden; /* ensures overlapping profile photo doesn't break layout */ */
+  overflow: hidden; /* ensures overlapping profile photo doesn't break layout */
 }
 
 /* Optional background image */
