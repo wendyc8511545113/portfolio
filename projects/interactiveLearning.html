@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project Title | Wendy Caffey</title>
+  <title>Interactive Learning</title>
   <link rel="stylesheet" href="../styles.css">
-  
-  <!-- Font Awesome for footer icons -->
+
+  <!-- FontAwesome (must be on every page that uses the footer) -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -16,52 +16,60 @@
   />
 </head>
 <body>
-
   <!-- Header -->
-  <header class="header-section project-header">
+  <header class="header-section">
     <div class="header-bg" style="background-image: url('../assets/header-bg.jpg');"></div>
 
     <div class="intro-header">
-      <h1>Interactive Learning</h1>
-      <hr class="divider">
-      <h2 class="subheading">Highlight 1 | Highlight 2 | Highlight 3</h2>
+      <h1>Wendy Caffey</h1>
     </div>
 
     <div class="profile-photo-container">
       <img src="../assets/profile.jpg" alt="Wendy Caffey" class="profile-photo">
     </div>
+
+    <!-- Home icon on the right -->
+    <div class="header-home-icon">
+      <a href="../index.html" aria-label="Home">
+        <i class="fa-solid fa-house"></i>
+      </a>
+    </div>
   </header>
 
   <main>
-    <!-- Project Description -->
-    <section class="project-description">
-      <h2>Description</h2>
-      <p>Write a short description of the project here.</p>
+    <!-- Project Title & Highlights Section -->
+    <section class="project-header" style="background: #ffffff; text-align:center; padding:5rem 2rem 3rem 2rem;">
+      <h2>Interactive Learning</h2>
+      <hr style="width:100px; border:2px solid #2e8b57; margin:1rem auto;">
+      <p class="highlights">Highlight 1 | Highlight 2 | Highlight 3</p>
     </section>
 
-    <!-- Embedded Code Section -->
-    <section class="project-embed">
-      <h2>Embed / Code</h2>
-      <div class="embed-container">
-        <!-- Paste your embed code here, e.g., iframe, CodePen, JSFiddle, etc. -->
-      </div>
+    <!-- Project Description Section -->
+    <section class="project-description" style="background:#f9fff9; padding:3rem 2rem; text-align:center;">
+      <h3>Project Overview</h3>
+      <p>Write your project description here. Explain the goals, target audience, and any interesting details about the project.</p>
+    </section>
+
+    <!-- Embed / Code Section -->
+    <section class="project-embed" style="background:#ffffff; padding:3rem 2rem; text-align:center;">
+      <h3>Embed / Code</h3>
+      <p>Paste your embed code or screenshots here.</p>
+      <!-- Example iframe embed -->
+      <!-- <iframe src="..." width="600" height="400"></iframe> -->
     </section>
   </main>
 
-  <!-- Footer -->
+  <!-- Footer Section -->
   <footer>
     <div class="footer-icons">
       <a href="mailto:wendycaffey@gmail.com" aria-label="Email Wendy">
         <i class="fa-solid fa-envelope"></i>
       </a>
-
       <a href="https://www.linkedin.com/in/wendy-caffey/" target="_blank" aria-label="LinkedIn">
         <i class="fa-brands fa-linkedin-in"></i>
       </a>
     </div>
     <p>&copy; 2026 Wendy Caffey</p>
   </footer>
-
-  <script src="../script.js"></script>
 </body>
 </html>
