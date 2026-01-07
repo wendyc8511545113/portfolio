@@ -1,0 +1,58 @@
+/* Base styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  color: #222;
+}
+
+/* Links with green accent */
+a {
+  color: #2e8b57; /* forest green */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+header {
+  background: #f0f0f0;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  color: #2e8b57;
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main sections */
+main {
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #f0f0f0;
+  color: #555;
+}
