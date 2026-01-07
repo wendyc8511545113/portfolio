@@ -21,20 +21,65 @@ a:hover {
   color: #3cb371; /* lighter green on hover */
 }
 
-/* Header */
-header {
-  background: #e6f2e6; /* soft light green instead of grey */
-  padding: 2rem 0;      /* more vertical space for modern look */
-  text-align: center;   /* center the content */
-  position: relative;   /* needed for profile photo overlap */
-  z-index: 10;
+/* Header Section */
+.header-section {
+  position: relative;
+  background: #e6f2e6; /* soft light green if no image */
+  padding: 4rem 2rem 2rem 2rem; /* more top padding for modern feel */
+  text-align: center;
+  overflow: hidden; /* ensures overlapping profile photo doesn't break layout */
 }
 
-header h1 {
-  color: #2e8b57;       /* forest green */
-  margin: 0;
-  font-size: 2rem;
+/* Optional background image */
+.header-section .header-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.15; /* subtle, not overpowering */
+  z-index: 0;
 }
+
+/* Title and Subtitle */
+.header-section .intro-header h1 {
+  color: #2e8b57; /* forest green */
+  font-size: 2.5rem;
+  margin: 0;
+  z-index: 5;
+  position: relative;
+}
+
+.header-section .intro-header .subheading {
+  color: #2e8b57;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  font-weight: normal;
+  z-index: 5;
+  position: relative;
+}
+
+/* Profile Photo (overlapping header & first section) */
+.profile-photo-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -48px;            /* half the photo height to overlap */
+  margin-bottom: -48px;
+  z-index: 15;
+}
+
+.profile-photo {
+  width: 96px;           /* 1 inch */
+  height: 96px;
+  object-fit: cover;
+  border-radius: 50%;    /* circular */
+  border: 3px solid #2e8b57;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
 
 
 /* Profile Photo */
