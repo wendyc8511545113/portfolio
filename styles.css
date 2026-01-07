@@ -33,6 +33,35 @@ a:hover {
   overflow: visible;     /* allows photo to overflow */
 }
 
+/* Header: Home Icon for additional pages */
+.header-home-icon {
+  position: absolute;
+  right: 2rem;        /* distance from right edge */
+  top: 50%;           /* vertical center */
+  transform: translateY(-50%);
+  z-index: 20;        /* above header background */
+}
+
+.header-home-icon a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: #2e8b57;
+  color: #ffffff;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  text-decoration: none;
+}
+
+.header-home-icon a:hover {
+  background-color: #3cb371;
+  transform: translateY(-2px);
+}
+
+
 /* Text column */
 .header-section .intro-header {
   text-align: left;
