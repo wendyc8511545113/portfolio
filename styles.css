@@ -173,7 +173,7 @@ footer {
   display: flex;
   justify-content: center;
   gap: 1.5rem; /* space between icons */
-  margin-bottom: 0.75rem; /* space below icon */
+  margin-bottom: 0.75rem; /* space below icons */
 }
 
 .footer-icons a {
@@ -185,7 +185,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-decoration: none; 
+  text-decoration: none; /* removes underline */
   font-size: 1.2rem;
   transition: transform 0.2s ease, background-color 0.2s ease;
 }
