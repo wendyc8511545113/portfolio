@@ -25,7 +25,7 @@ a:hover {
 .header-section {
   position: relative;
   background: #e6f2e6;
-  padding: 2rem 2rem 4rem 2rem; /* extra bottom padding for overlap */
+  padding: 2rem 2rem 4rem 2rem;   /* extra bottom padding for overlap */
   display: flex;
   align-items: center;
   justify-content: center; /* center header content horizontally */
@@ -35,6 +35,10 @@ a:hover {
 .header-section .intro-header {
   text-align: left;        /* left-align the name/subtitle */
   z-index: 5;              /* above header background */
+  display: flex;
+  flex-direction: column; /* keeps h1 above h2 */
+  justify-content: center; /* optional: centers text vertically in its own column */
+  max-width: 400px; /* prevents text from stretching too wide */
 }
 
 .header-section .profile-photo-container {
