@@ -21,13 +21,27 @@ a:hover {
   color: #3cb371; /* lighter green on hover */
 }
 
-/* Header Section */
+/* Header: name left, photo right, photo still overlaps first section */
 .header-section {
   position: relative;
-  background: #e6f2e6; /* soft light green if no image */
-  padding: 4rem 2rem 2rem 2rem; /* more top padding for modern feel */
-  text-align: left;
-  overflow: hidden; /* ensures overlapping profile photo doesn't break layout */
+  background: #e6f2e6;
+  padding: 2rem 2rem 4rem 2rem; /* extra bottom padding for overlap */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* center header content horizontally */
+  gap: 1rem;               /* space between name and photo */
+}
+
+.header-section .intro-header {
+  text-align: left;        /* left-align the name/subtitle */
+  z-index: 5;              /* above header background */
+}
+
+.header-section .profile-photo-container {
+  position: relative;
+  top: 0;                  /* keep photo overlapping About section */
+  margin-bottom: -48px;    /* still overlaps section below */
+  z-index: 15;
 }
 
 /* Optional background image */
