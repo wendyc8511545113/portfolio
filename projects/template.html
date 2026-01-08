@@ -2,11 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+
+  <!-- EDIT HERE: Update page title for each project -->
+  <title>PROJECT TITLE | Wendy Caffey</title>
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project Title | Wendy Caffey</title>
+
+  <!-- DO NOT EDIT: Global site styles -->
   <link rel="stylesheet" href="../styles.css">
-  
-  <!-- Font Awesome for footer icons -->
+
+  <!-- DO NOT EDIT: FontAwesome icons -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -15,61 +20,136 @@
     referrerpolicy="no-referrer"
   />
 </head>
+
 <body>
 
-  <!-- Header -->
-  <header class="project-header">
-    <div class="header-bg"></div>
+<!-- =====================================================
+     HEADER (Consistent Across All Project Pages)
+     ===================================================== -->
+<header class="project-header">
 
-    <div class="intro-header">
-      <h1>Project Title</h1>
-      <hr class="divider">
-      <h2 class="highlights">Highlight 1 | Highlight 2 | Highlight 3</h2>
+  <!-- DO NOT EDIT: Name branding -->
+  <div class="intro-header">
+    <h1>Wendy Caffey</h1>
+  </div>
+
+  <!-- OPTIONAL: Replace photo if needed -->
+  <div class="profile-photo-container">
+    <img 
+      src="../assets/profile.jpg" 
+      alt="Wendy Caffey" 
+      class="profile-photo"
+    >
+  </div>
+
+  <!-- DO NOT EDIT: Home navigation -->
+  <div class="header-home-icon">
+    <a href="../index.html" aria-label="Return Home">
+      <i class="fa-solid fa-house"></i>
+    </a>
+  </div>
+
+</header>
+
+<main>
+
+  <!-- =====================================================
+       PROJECT HERO / TITLE SECTION
+       ===================================================== -->
+  <section class="project-header-info">
+
+    <!-- EDIT HERE: Project title -->
+    <h2>PROJECT TITLE GOES HERE</h2>
+
+    <!-- DO NOT EDIT: Decorative divider -->
+    <hr class="divider">
+
+    <!-- EDIT HERE: Short highlights or tags -->
+    <p class="subheading">
+      Skill / Tool / Outcome | Skill / Tool / Outcome | Skill / Tool / Outcome
+    </p>
+
+  </section>
+
+  <!-- =====================================================
+       PROJECT OVERVIEW SECTION
+       ===================================================== -->
+  <section class="project-description">
+
+    <!-- EDIT HERE: Section title (can rename if needed) -->
+    <h2>Project Overview</h2>
+
+    <!-- EDIT HERE: Project description -->
+    <p>
+      Briefly explain the purpose of this project. Include:
+      <br><br>
+      • The problem or goal<br>
+      • Target audience or users<br>
+      • Tools, platforms, or methods used<br>
+      • Outcome or results (if applicable)
+    </p>
+
+  </section>
+
+  <!-- =====================================================
+       EMBED / DEMO / CODE SECTION
+       ===================================================== -->
+  <section class="project-embed">
+
+    <!-- OPTIONAL: Rename this section -->
+    <h2>Demo / Interactive Example</h2>
+
+    <div class="embed-container">
+
+      <!-- EDIT HERE: Paste embed code below -->
+      <!-- Examples: iframe, CodePen, Figma, Canva, video, etc. -->
+
+      <!--
+      <iframe 
+        src="PASTE_EMBED_URL_HERE"
+        width="100%"
+        height="500"
+        frameborder="0"
+        allowfullscreen>
+      </iframe>
+      -->
+
     </div>
 
-    <!-- Profile photo (optional) -->
-    <div class="profile-photo-container">
-      <img src="../assets/profile.jpg" alt="Wendy Caffey" class="profile-photo">
-    </div>
+  </section>
 
-    <!-- Home icon -->
-    <div class="header-home-icon">
-      <a href="../index.html" aria-label="Go Home">
-        <i class="fa-solid fa-house"></i>
-      </a>
-    </div>
-  </header>
+</main>
 
-  <main>
-    <!-- Project Description Section -->
-    <section class="project-description">
-      <h2>Description</h2>
-      <p>Write a short description of the project here. Explain the goals, target audience, and any interesting details about the project.</p>
-    </section>
+<!-- =====================================================
+     FOOTER (Consistent Across Site)
+     ===================================================== -->
+<footer>
 
-    <!-- Embed / Code Section -->
-    <section class="project-embed">
-      <h2>Embed / Code</h2>
-      <div class="embed-container">
-        <!-- Paste your embed code here, e.g., iframe, CodePen, JSFiddle, etc. -->
-      </div>
-    </section>
-  </main>
+  <div class="footer-icons">
 
-  <!-- Footer -->
-  <footer>
-    <div class="footer-icons">
-      <a href="mailto:wendycaffey@gmail.com" aria-label="Email Wendy">
-        <i class="fa-solid fa-envelope"></i>
-      </a>
+    <!-- OPTIONAL: Update email if needed -->
+    <a href="mailto:wendycaffey@gmail.com" aria-label="Email Wendy">
+      <i class="fa-solid fa-envelope"></i>
+    </a>
 
-      <a href="https://www.linkedin.com/in/wendy-caffey/" target="_blank" aria-label="LinkedIn">
-        <i class="fa-brands fa-linkedin-in"></i>
-      </a>
-    </div>
-    <p>&copy; 2026 Wendy Caffey</p>
-  </footer>
+    <!-- OPTIONAL: Update LinkedIn URL if needed -->
+    <a 
+      href="https://www.linkedin.com/in/wendy-caffey/" 
+      target="_blank" 
+      aria-label="LinkedIn"
+    >
+      <i class="fa-brands fa-linkedin-in"></i>
+    </a>
 
-  <script src="../script.js"></script>
+  </div>
+
+  <!-- DO NOT EDIT: Copyright -->
+  <p>&copy; 2026 Wendy Caffey</p>
+
+</footer>
+
+<!-- DO NOT EDIT: Global scripts -->
+<script src="../script.js"></script>
+
 </body>
 </html>
