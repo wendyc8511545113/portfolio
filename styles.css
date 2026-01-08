@@ -288,27 +288,6 @@ footer {
   min-height: 64px;   /* 👈 this is what actually shortens it */
 }
 
-/* =========================
-.project-header {
-  position: sticky;   /* 👈 change from relative */
-  top: 0;             /* 👈 required for sticky */
-  z-index: 1000;      /* 👈 ensures it stays above content */
-  background: #e6f2e6;
-  padding: 2rem 2rem 1.75rem 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  overflow: visible;
-  transition: padding 0.3s ease;
-  min-height: 112px;
-}
-
-/* Shrink on scroll */
-.project-header.shrink {
-  padding: 0.5rem 2rem;
-}
-========================= */
-
 /* Name (left) */
 .project-header .intro-header h1 {
   color: #2e8b57;
