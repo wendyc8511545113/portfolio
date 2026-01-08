@@ -266,7 +266,29 @@ footer {
 /* =========================
    6. Project Page Header
 ========================= */
+.project-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #e6f2e6;
+  padding: 2rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: visible;
+  transition:
+    padding 0.3s ease,
+    min-height 0.3s ease;
+  min-height: 112px;
+}
 
+/* Shrink on scroll */
+.project-header.shrink {
+  padding: 0.4rem 2rem;
+  min-height: 64px;   /* 👈 this is what actually shortens it */
+}
+
+/* =========================
 .project-header {
   position: sticky;   /* 👈 change from relative */
   top: 0;             /* 👈 required for sticky */
@@ -285,6 +307,7 @@ footer {
 .project-header.shrink {
   padding: 0.5rem 2rem;
 }
+========================= */
 
 /* Name (left) */
 .project-header .intro-header h1 {
@@ -295,7 +318,7 @@ footer {
 }
 
 .project-header.shrink .intro-header h1 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;  /* REPLACED 1.8 WITH 1.6 */
 }
 
 /* Profile photo (centered, overlaps header) */
