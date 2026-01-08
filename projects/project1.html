@@ -2,37 +2,57 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+
+  <!-- =====================================================
+       EDITABLE: Page title (browser tab)
+       Change "Page Header Here" to your page/project name
+  ====================================================== -->
+  <title>Page Header Here | Wendy Caffey</title>
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Interactive Learning | Wendy Caffey</title>
+
+  <!-- =====================================================
+       Fonts (OPTIONAL)
+       Swap fonts here if desired
+  ====================================================== -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- =====================================================
+       Main stylesheet
+       EDIT COLORS + STYLES in styles.css
+  ====================================================== -->
   <link rel="stylesheet" href="../styles.css">
 
-
-  <!-- FontAwesome for footer icons -->
+  <!-- =====================================================
+       FontAwesome icons (do not edit unless upgrading)
+  ====================================================== -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
 </head>
+
 <body>
 
-<!-- Header -->
+<!-- =====================================================
+     HEADER SECTION (Consistent across site)
+===================================================== -->
 <header class="project-header">
 
-  <!-- Name on the left -->
+  <!-- EDITABLE: Name text -->
   <div class="intro-header">
     <h1>Wendy Caffey</h1>
   </div>
 
-  <!-- Profile photo centered -->
+  <!-- EDITABLE: Profile image -->
+  <!-- Replace image path if needed -->
   <div class="profile-photo-container">
-    <img src="../assets/profile.jpg" alt="Wendy Caffey" class="profile-photo">
+    <img src="../assets/profile.jpg" alt="Profile Photo" class="profile-photo">
   </div>
 
-  <!-- Home icon on the right -->
+  <!-- Home icon (leave as-is for navigation consistency) -->
   <div class="header-home-icon">
     <a href="../index.html" aria-label="Return Home">
       <i class="fa-solid fa-house"></i>
@@ -41,44 +61,89 @@
 
 </header>
 
+<!-- =====================================================
+     MAIN CONTENT HERE
+===================================================== -->
+<main>
 
-  <main>
-    <!-- Project Title & Highlights Section -->
-    <section class="project-header-info">
-      <h2>Interactive Learning</h2>
-      <hr class="divider">
-      <p class="subheading">Highlight 1 | Highlight 2 | Highlight 3</p>
-    </section>
+  <!-- =====================================================
+       PAGE HEADER / HIGHLIGHTS
+       MOST COMMONLY EDITED SECTION
+  ====================================================== -->
+  <section class="project-header-info">
 
-    <!-- Project Description Section -->
-    <section class="project-description">
-      <h2>Project Overview</h2>
-      <p>Write your project description here. Explain the goals, target audience, and any interesting details about the project.</p>
-    </section>
+    <!-- EDITABLE: Main page heading -->
+    <h2>Virtual Learning Study</h2>
 
-    <!-- Embed / Code Section -->
-    <section class="project-embed">
-      <h2>Embed / Code</h2>
-      <div class="embed-container">
-        <!-- Paste your embed code here, e.g., iframe, CodePen, JSFiddle -->
-        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQ6F6-3paKCF5oEhGeunDkuSAZjhCWXhof0QD_jjvSpLIhO1cVn7KR5FtenolHZkfBj2tcLcYLwCT6N/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="1280" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-      </div>
-    </section>
-  </main>
+    <!-- Divider line (style controlled in CSS) -->
+    <hr class="divider">
 
-  <!-- Footer Section -->
-  <footer>
-    <div class="footer-icons">
-      <a href="mailto:wendycaffey@gmail.com" aria-label="Email Wendy">
-        <i class="fa-solid fa-envelope"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/wendy-caffey/" target="_blank" aria-label="LinkedIn">
-        <i class="fa-brands fa-linkedin-in"></i>
-      </a>
+    <!-- EDITABLE: Short highlights / tags -->
+    <p class="subheading">
+      Research-Based Design | Instructional Analysis | Learner Engagement Evaluation
+    </p>
+  </section>
+
+  <!-- =====================================================
+       PROJECT / PAGE DESCRIPTION
+  ====================================================== -->
+  <section class="project-description">
+
+    <!-- EDITABLE: Section title -->
+    <h2>Research Overview</h2>
+
+    <!-- EDITABLE: Description text -->
+    <p>
+    A graduate-level research presentation examining virtual classroom methodologies that improve student attendance and participation. This project analyzes instructional strategies, engagement frameworks, and teaching practices used in online learning environments, translating research findings into actionable insights for instructional design and digital learning.
+    </p>
+  </section>
+
+  <!-- =====================================================
+       EMBED / CODE / MEDIA SECTION
+  ====================================================== -->
+  <section class="project-embed">
+
+    <!-- EDITABLE: Section title -->
+    <h2>Engage Below 🌟</h2>
+
+    <!-- EDITABLE: Embed container -->
+    <div class="embed-container">
+      <!-- 
+        Paste embed code here:
+        - iframe
+        - CodePen
+        - JSFiddle
+        - Video
+      -->
+      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSKfonPzHASLNP_ujCbp-exBiNrDXLqEHnrsJv9BaC3ZBwWoMS2ST4W-HmwJsrY5mqRVHfAtDai6mcQ/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
     </div>
-    <p>&copy; 2026 Wendy Caffey</p>
-  </footer>
+  </section>
 
-  <script src="../script.js"></script>
+</main>
+
+<!-- =====================================================
+     FOOTER (Usually site-wide)
+===================================================== -->
+<footer>
+
+  <!-- EDITABLE: Social links -->
+  <div class="footer-icons">
+    <a href="mailto:wendycaffey@gmail.com" aria-label="Email">
+      <i class="fa-solid fa-envelope"></i>
+    </a>
+
+    <a href="https://www.linkedin.com/in/wendy-caffey/" target="_blank" aria-label="LinkedIn">
+      <i class="fa-brands fa-linkedin-in"></i>
+    </a>
+  </div>
+
+  <!-- EDITABLE: Copyright year -->
+  <p>&copy; 2026 Wendy Caffey</p>
+
+</footer>
+
+<!-- OPTIONAL: JavaScript -->
+<script src="../script.js"></script>
+
 </body>
 </html>
