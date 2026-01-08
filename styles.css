@@ -236,12 +236,15 @@ footer {
 
 /* Top project header (same layout as landing page) */
 .project-header {
-  position: relative;
+  position: sticky;   /* 👈 change from relative */
+  top: 0;             /* 👈 required for sticky */
+  z-index: 1000;      /* 👈 ensures it stays above content */
+
   background: #e6f2e6;
   padding: 2rem 2rem 4rem 2rem;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* name left, home icon right */
+  justify-content: space-between;
   overflow: visible;
   transition: padding 0.3s ease;
 }
