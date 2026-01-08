@@ -1,9 +1,8 @@
 /* =====================================================
    1. BASE STYLES
 ===================================================== */
-
 body {
-  font-family: 'Inter', sans-serif; /* Default body font */
+  font-family: 'Inter', sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
@@ -26,8 +25,6 @@ a:hover {
 /* =====================================================
    2. TYPOGRAPHY
 ===================================================== */
-
-/* Headings & branding */
 h1, h2, h3,
 .header-section .intro-header h1,
 .project-header .intro-header h1 {
@@ -36,7 +33,6 @@ h1, h2, h3,
   letter-spacing: 0.02em;
 }
 
-/* Subheadings */
 .subheading,
 .project-header-info .subheading {
   font-family: 'Inter', sans-serif;
@@ -45,7 +41,6 @@ h1, h2, h3,
   text-transform: uppercase;
 }
 
-/* Paragraphs */
 p {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
@@ -56,10 +51,9 @@ p {
 /* =====================================================
    3. HEADER SECTION
 ===================================================== */
-
 .header-section {
   position: relative;
-  background: #e6f2e6; /* Light green */
+  background: #e6f2e6;
   padding: 2rem 2rem 1.75rem 2rem;
   display: flex;
   align-items: center;
@@ -82,7 +76,6 @@ p {
   color: #2e8b57;
   font-size: 2.5rem;
   margin: 0;
-  z-index: 5;
 }
 
 .header-section .intro-header .subheading {
@@ -90,7 +83,6 @@ p {
   font-size: 1.2rem;
   margin-top: 0.5rem;
   font-weight: normal;
-  z-index: 5;
 }
 
 /* Profile photo */
@@ -127,7 +119,6 @@ p {
 /* =====================================================
    4. HEADER HOME ICON
 ===================================================== */
-
 .header-home-icon {
   position: absolute;
   right: 2rem;
@@ -158,7 +149,6 @@ p {
 /* =====================================================
    5. MAIN SECTIONS
 ===================================================== */
-
 main {
   padding: 2rem;
 }
@@ -184,7 +174,9 @@ main {
   text-align: center;
 }
 
-/* --- Portfolio Section --- */
+/* =====================================================
+   6. PORTFOLIO SECTION
+===================================================== */
 #portfolio {
   padding: 4rem 2rem;
 }
@@ -202,20 +194,39 @@ main {
   font-size: 1.1rem;
 }
 
-/* Portfolio Grid */
-.portfolio-grid {
+/* --- Portfolio Container & Rows --- */
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* space between rows */
+}
+
+.portfolio-row {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
+  padding: 1rem;
+  border-radius: 10px;
 }
 
-/* Portfolio Item (default styling) */
+/* Alternating row backgrounds */
+.white-row {
+  background: #ffffff;
+}
+
+.green-row {
+  background: #f9fff9;
+}
+
+/* --- Portfolio Items --- */
 .portfolio-item {
   border: 2px solid #2e8b57;
   border-radius: 10px;
   padding: 1.5rem;
   transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
   text-align: center;
+  background: inherit; /* inherit row background */
 }
 
 .portfolio-item:hover {
@@ -223,38 +234,22 @@ main {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-/* =====================================================
-   5a. FLEXIBLE ROW ALTERNATING BACKGROUND
-   Automatically alternates rows: white / light green
-===================================================== */
-
-/* Every row has 3 items, so 1st row = items 1-3, 2nd row = items 4-6, etc. */
-.portfolio-grid {
-  counter-reset: row;
+.portfolio-item h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #2e8b57;
+  font-size: 1.2rem;
 }
 
-.portfolio-item {
-  /* Assign row number based on order */
-  counter-increment: row;
-}
-
-/* Use nth-child to alternate backgrounds automatically per row of 3 items */
-.portfolio-item:nth-child(6n+1),
-.portfolio-item:nth-child(6n+2),
-.portfolio-item:nth-child(6n+3) {
-  background: #ffffff; /* White for odd rows */
-}
-
-.portfolio-item:nth-child(6n+4),
-.portfolio-item:nth-child(6n+5),
-.portfolio-item:nth-child(6n+6) {
-  background: #f9fff9; /* Light green for even rows */
+.portfolio-item p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.4;
 }
 
 /* =====================================================
-   6. FOOTER
+   7. FOOTER
 ===================================================== */
-
 footer {
   text-align: center;
   padding: 2rem 1rem;
@@ -290,9 +285,8 @@ footer {
 }
 
 /* =====================================================
-   7. PROJECT PAGE HEADER (Optional)
+   8. PROJECT PAGE HEADER (Optional)
 ===================================================== */
-
 .project-header {
   position: sticky;
   top: 0;
@@ -306,7 +300,6 @@ footer {
   transition: padding 0.3s ease, min-height 0.3s ease;
 }
 
-/* Shrink on scroll */
 .project-header.shrink {
   padding: 0.4rem 2rem;
   min-height: 64px;
@@ -323,7 +316,6 @@ footer {
   font-size: 1.6rem;
 }
 
-/* Profile photo overlapping header */
 .project-header .profile-photo-container {
   position: absolute;
   left: 50%;
@@ -338,15 +330,13 @@ footer {
   bottom: 0;
 }
 
-/* Home icon */
 .project-header .header-home-icon {
   z-index: 20;
 }
 
 /* =====================================================
-   8. PROJECT HEADER INFO (White Section)
+   9. PROJECT HEADER INFO (White Section)
 ===================================================== */
-
 .project-header-info {
   background: #ffffff;
   text-align: center;
@@ -373,9 +363,8 @@ footer {
 }
 
 /* =====================================================
-   9. PROJECT CONTENT SECTIONS
+   10. PROJECT CONTENT SECTIONS
 ===================================================== */
-
 .project-description,
 .project-embed {
   padding: 4rem 2rem;
