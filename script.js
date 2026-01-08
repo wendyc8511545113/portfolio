@@ -9,7 +9,21 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+// Shrink project header and hide profile photo on scroll
+window.addEventListener('scroll', () => {
+  const header = document.querySelector('.project-header');
+  if (!header) return;
 
+  if (window.scrollY > 100) {
+    header.classList.add('shrink');
+  } else {
+    header.classList.remove('shrink');
+  }
+});
+
+
+
+/*
 // Shrink project header and hide profile photo on scroll
 window.addEventListener('scroll', () => {
   const header = document.querySelector('.project-header');
@@ -23,3 +37,4 @@ window.addEventListener('scroll', () => {
     header.style.padding = '4rem 2rem 2rem 2rem';
   }
 });
+*/
