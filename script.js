@@ -20,21 +20,3 @@ window.addEventListener('scroll', () => {
     header.classList.remove('shrink');
   }
 });
-
-
-
-/*
-// Shrink project header and hide profile photo on scroll
-window.addEventListener('scroll', () => {
-  const header = document.querySelector('.project-header');
-  if (!header) return;
-
-  if (window.scrollY > 100) {
-    header.classList.add('shrink');
-    header.style.padding = '2rem 2rem 1rem 2rem';
-  } else {
-    header.classList.remove('shrink');
-    header.style.padding = '4rem 2rem 2rem 2rem';
-  }
-});
-*/
