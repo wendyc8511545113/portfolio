@@ -38,6 +38,11 @@ a:hover {
   overflow: visible;
 }
 
+.header-section,
+.project-header {
+  min-height: 112px;
+}
+
 .header-section .intro-header {
   text-align: left;
   z-index: 5;
@@ -244,9 +249,15 @@ footer {
   padding: 2rem 2rem 1.75rem 2rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   overflow: visible;
   transition: padding 0.3s ease;
+
+.header-section,
+.project-header {
+  min-height: 112px;
+}
+
 }
 
 /* Shrink on scroll */
