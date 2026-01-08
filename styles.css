@@ -231,10 +231,10 @@ footer {
 }
 
 /* =========================
-   6. Project Page Specific
+   6. Project Page Header
 ========================= */
 
-/* Header: shrink on scroll, home icon on right, profile photo disappears */
+/* Top project header (same layout as landing page) */
 .project-header {
   position: relative;
   background: #e6f2e6;
@@ -246,10 +246,12 @@ footer {
   transition: padding 0.3s ease;
 }
 
+/* Shrink on scroll */
 .project-header.shrink {
   padding: 0.8rem 2rem;
 }
 
+/* Name (left) */
 .project-header .intro-header h1 {
   color: #2e8b57;
   font-size: 2.5rem;
@@ -261,6 +263,7 @@ footer {
   font-size: 1.8rem;
 }
 
+/* Profile photo (centered, overlaps header) */
 .project-header .profile-photo-container {
   position: absolute;
   left: 50%;
@@ -275,70 +278,50 @@ footer {
   bottom: 0;
 }
 
-.project-header .profile-photo {
-  width: 96px;
-  height: 96px;
-  object-fit: cover;
-  border-radius: 20% / 40%;
-  border: 3px solid #2e8b57;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-}
-
-/* Home icon */
+/* Home icon (right) */
 .project-header .header-home-icon {
-  position: relative;
   z-index: 20;
 }
 
-.project-header .header-home-icon a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  background-color: #2e8b57;
-  color: #ffffff;
-  border-radius: 50%;
-  font-size: 1.2rem;
-  transition: transform 0.2s ease, background-color 0.2s ease;
-  text-decoration: none;
-}
+/* =========================
+   7. Project Header Info (White Section)
+========================= */
 
-.project-header .header-home-icon a:hover {
-  background-color: #3cb371;
-  transform: translateY(-2px);
-}
-
-/* Project main sections */
-.project-header,
-.project-description,
-.project-embed {
+.project-header-info {
+  background: #ffffff;
   text-align: center;
+  padding: 5rem 2rem 3rem 2rem;
 }
 
-.project-header {
-  flex-direction: column;
+.project-header-info h2 {
+  color: #2e8b57;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
-.project-header .divider {
-  width: 100px;
+.project-header-info .divider {
+  width: 120px; /* ~1.5 inches */
   border: 2px solid #2e8b57;
   margin: 1rem auto;
   border-radius: 2px;
 }
 
-.project-header .highlights {
-  margin-top: 0.5rem;
+.project-header-info .subheading {
   font-size: 1.1rem;
   font-weight: bold;
+  color: #2e8b57;
 }
 
-/* Project description and embed sections */
+/* =========================
+   8. Project Content Sections
+========================= */
+
 .project-description {
   padding: 4rem 2rem;
   background: #f9fff9;
   max-width: 900px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .project-embed {
@@ -346,6 +329,7 @@ footer {
   background: #ffffff;
   max-width: 900px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .project-description h2,
@@ -353,6 +337,10 @@ footer {
   color: #2e8b57;
   font-size: 2rem;
   margin-bottom: 1rem;
+}
+
+.embed-container {
+  margin-top: 2rem;
 }
 
 .embed-container {
