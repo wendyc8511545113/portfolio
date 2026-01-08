@@ -182,8 +182,11 @@ main {
 #about p {
   font-size: 1.1rem;
   max-width: 700px;
-  margin: 0 auto;
+  margin: 0 auto 1rem auto;
   line-height: 1.8;
+  overflow-wrap: normal;
+  word-break: normal;
+  max-width: 620px; 
 }
 
 #portfolio {
