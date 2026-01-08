@@ -226,6 +226,30 @@ main {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
+/* Default portfolio item background */
+.portfolio-item {
+  border: 2px solid #2e8b57;
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-align: center;
+}
+
+/* White background for the first row, third row, etc. */
+.portfolio-item:nth-child(6n+1),
+.portfolio-item:nth-child(6n+2),
+.portfolio-item:nth-child(6n+3) {
+  background: #ffffff;
+}
+
+/* Light green background for the second row, fourth row, etc. */
+.portfolio-item:nth-child(6n+4),
+.portfolio-item:nth-child(6n+5),
+.portfolio-item:nth-child(6n+6) {
+  background: #f9fff9; /* same light green you used */
+}
+
+
 /* =========================
    5. Footer
 ========================= */
