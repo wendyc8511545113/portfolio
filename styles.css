@@ -181,11 +181,10 @@ main {
 
 #about p {
   font-size: 1.1rem;
-  max-width: 500px;
-  margin: 0 auto 0.3rem auto;
-  line-height: 1.4;
-  text-align: center;
-  
+  line-height: 1.4;       /* optional, tight spacing */
+  margin: 0.3rem auto;    /* top/bottom spacing, auto centers horizontally */
+  white-space: nowrap;    /* keeps each sentence on one line */
+  text-align: center;     /* ⭐ center the text */ 
 }
 
 #portfolio {
