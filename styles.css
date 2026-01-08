@@ -1,6 +1,6 @@
-/* =========================
-   1. Base Styles
-========================= */
+/* =====================================================
+   1. BASE STYLES
+===================================================== */
 
 body {
   font-family: 'Inter', sans-serif; /* Default body font */
@@ -13,27 +13,25 @@ body {
 }
 
 a {
-  color: #2e8b57; /* forest green */
+  color: #2e8b57; /* Forest green */
   text-decoration: none;
   transition: color 0.2s;
 }
 
 a:hover {
-  color: #3cb371; /* lighter green */
+  color: #3cb371; /* Lighter green */
   text-decoration: underline;
 }
 
-/* =========================
-   Typography
-========================= */
+/* =====================================================
+   2. TYPOGRAPHY
+===================================================== */
 
-/* Headings & name branding */
-h1,
-h2,
-h3,
+/* Headings & branding */
+h1, h2, h3,
 .header-section .intro-header h1,
 .project-header .intro-header h1 {
-  font-family: 'Playfair Display', serif; /* Elegant serif for headings */
+  font-family: 'Playfair Display', serif;
   font-weight: 700;
   letter-spacing: 0.02em;
 }
@@ -55,20 +53,20 @@ p {
   line-height: 1.75;
 }
 
-/* =========================
-   2. Header for index.html
-========================= */
+/* =====================================================
+   3. HEADER SECTION
+===================================================== */
 
 .header-section {
   position: relative;
-  background: #e6f2e6; /* soft light green */
+  background: #e6f2e6; /* Light green */
   padding: 2rem 2rem 1.75rem 2rem;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 2rem;
-  overflow: visible;
   min-height: 112px;
+  overflow: visible;
 }
 
 .header-section .intro-header {
@@ -84,7 +82,6 @@ p {
   color: #2e8b57;
   font-size: 2.5rem;
   margin: 0;
-  position: relative;
   z-index: 5;
 }
 
@@ -93,7 +90,6 @@ p {
   font-size: 1.2rem;
   margin-top: 0.5rem;
   font-weight: normal;
-  position: relative;
   z-index: 5;
 }
 
@@ -101,8 +97,8 @@ p {
 .profile-photo-container {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
   bottom: -32px;
+  transform: translateX(-50%);
   z-index: 15;
 }
 
@@ -128,9 +124,9 @@ p {
   z-index: 0;
 }
 
-/* =========================
-   3. Header Home Icon
-========================= */
+/* =====================================================
+   4. HEADER HOME ICON
+===================================================== */
 
 .header-home-icon {
   position: absolute;
@@ -159,14 +155,15 @@ p {
   transform: translateY(-2px);
 }
 
-/* =========================
-   4. Main Sections (Index)
-========================= */
+/* =====================================================
+   5. MAIN SECTIONS
+===================================================== */
 
 main {
   padding: 2rem;
 }
 
+/* --- About Me Section --- */
 #about {
   text-align: center;
   padding: 5rem 2rem 4rem 2rem;
@@ -181,15 +178,15 @@ main {
 
 #about p {
   font-size: 1.1rem;
-  line-height: 1.4;       
-  margin: 0.3rem auto;    
-  white-space: nowrap;   
-  text-align: center;    
+  line-height: 1.4;
+  margin: 0.3rem auto;
+  white-space: nowrap;
+  text-align: center;
 }
 
+/* --- Portfolio Section --- */
 #portfolio {
   padding: 4rem 2rem;
-  background: #f9fff9;
 }
 
 #portfolio h2 {
@@ -205,19 +202,19 @@ main {
   font-size: 1.1rem;
 }
 
-/* Portfolio grid */
+/* Portfolio Grid */
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
 }
 
+/* Portfolio Item (default styling) */
 .portfolio-item {
   border: 2px solid #2e8b57;
   border-radius: 10px;
   padding: 1.5rem;
   transition: transform 0.2s, box-shadow 0.2s;
-  background: #ffffff;
   text-align: center;
 }
 
@@ -226,33 +223,37 @@ main {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-/* Default portfolio item background */
-.portfolio-item {
-  border: 2px solid #2e8b57;
-  border-radius: 10px;
-  padding: 1.5rem;
-  transition: transform 0.2s, box-shadow 0.2s;
-  text-align: center;
+/* =====================================================
+   5a. FLEXIBLE ROW ALTERNATING BACKGROUND
+   Automatically alternates rows: white / light green
+===================================================== */
+
+/* Every row has 3 items, so 1st row = items 1-3, 2nd row = items 4-6, etc. */
+.portfolio-grid {
+  counter-reset: row;
 }
 
-/* White background for the first row, third row, etc. */
+.portfolio-item {
+  /* Assign row number based on order */
+  counter-increment: row;
+}
+
+/* Use nth-child to alternate backgrounds automatically per row of 3 items */
 .portfolio-item:nth-child(6n+1),
 .portfolio-item:nth-child(6n+2),
 .portfolio-item:nth-child(6n+3) {
-  background: #ffffff;
+  background: #ffffff; /* White for odd rows */
 }
 
-/* Light green background for the second row, fourth row, etc. */
 .portfolio-item:nth-child(6n+4),
 .portfolio-item:nth-child(6n+5),
 .portfolio-item:nth-child(6n+6) {
-  background: #f9fff9; /* same light green you used */
+  background: #f9fff9; /* Light green for even rows */
 }
 
-
-/* =========================
-   5. Footer
-========================= */
+/* =====================================================
+   6. FOOTER
+===================================================== */
 
 footer {
   text-align: center;
@@ -288,32 +289,29 @@ footer {
   transform: translateY(-2px);
 }
 
-/* =========================
-   6. Project Page Header
-========================= */
+/* =====================================================
+   7. PROJECT PAGE HEADER (Optional)
+===================================================== */
+
 .project-header {
   position: sticky;
   top: 0;
   z-index: 1000;
   background: #e6f2e6;
-  padding: 2rem 2rem;
+  padding: 2rem;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  overflow: visible;
-  transition:
-    padding 0.3s ease,
-    min-height 0.3s ease;
   min-height: 112px;
+  transition: padding 0.3s ease, min-height 0.3s ease;
 }
 
 /* Shrink on scroll */
 .project-header.shrink {
   padding: 0.4rem 2rem;
-  min-height: 64px;   /* 👈 this is what actually shortens it */
+  min-height: 64px;
 }
 
-/* Name (left) */
 .project-header .intro-header h1 {
   color: #2e8b57;
   font-size: 2.5rem;
@@ -322,10 +320,10 @@ footer {
 }
 
 .project-header.shrink .intro-header h1 {
-  font-size: 1.6rem;  /* REPLACED 1.8 WITH 1.6 */
+  font-size: 1.6rem;
 }
 
-/* Profile photo (centered, overlaps header) */
+/* Profile photo overlapping header */
 .project-header .profile-photo-container {
   position: absolute;
   left: 50%;
@@ -340,14 +338,14 @@ footer {
   bottom: 0;
 }
 
-/* Home icon (right) */
+/* Home icon */
 .project-header .header-home-icon {
   z-index: 20;
 }
 
-/* =========================
-   7. Project Header Info (White Section)
-========================= */
+/* =====================================================
+   8. PROJECT HEADER INFO (White Section)
+===================================================== */
 
 .project-header-info {
   background: #ffffff;
@@ -374,24 +372,24 @@ footer {
   color: #2e8b57;
 }
 
-/* =========================
-   8. Project Content Sections
-========================= */
+/* =====================================================
+   9. PROJECT CONTENT SECTIONS
+===================================================== */
 
-.project-description {
+.project-description,
+.project-embed {
   padding: 4rem 2rem;
-  background: #f9fff9;
   max-width: 900px;
   margin: 0 auto;
   text-align: center;
 }
 
+.project-description {
+  background: #f9fff9;
+}
+
 .project-embed {
-  padding: 4rem 2rem;
   background: #ffffff;
-  max-width: 900px;
-  margin: 0 auto;
-  text-align: center;
 }
 
 .project-description h2,
