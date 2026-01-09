@@ -393,9 +393,9 @@ footer {
 }
 
 /* =====================================================
-   Thesis Button
+   Button
 ===================================================== */
-.thesis-button {
+.button {
   display: inline-block;
   padding: 0.8rem 1.8rem;
   background-color: #2e8b57; /* Forest green */
@@ -409,7 +409,7 @@ footer {
   margin-top: 1rem;
 }
 
-.thesis-button:hover {
+.button:hover {
   background-color: #3cb371; /* Lighter green on hover */
   transform: translateY(-2px);
 }
