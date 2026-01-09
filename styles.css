@@ -391,3 +391,26 @@ footer {
 .embed-container {
   margin-top: 2rem;
 }
+
+/* =====================================================
+   Thesis Button
+===================================================== */
+.thesis-button {
+  display: inline-block;
+  padding: 0.8rem 1.8rem;
+  background-color: #2e8b57; /* Forest green */
+  color: #ffffff;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  margin-top: 1rem;
+}
+
+.thesis-button:hover {
+  background-color: #3cb371; /* Lighter green on hover */
+  transform: translateY(-2px);
+}
+
