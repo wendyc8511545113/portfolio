@@ -411,6 +411,7 @@ footer {
 
 .button:hover {
   background-color: #3cb371; /* Lighter green on hover */
+  color: #ffffff; /* keep text white */
   transform: translateY(-2px);
 }
 
