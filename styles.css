@@ -445,7 +445,9 @@ footer {
 .resume-item h3 {
   color: #2e8b57;
   font-size: 1.8rem;
-  margin-bottom: 0.75rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  padding: 2rem 2rem;
 }
 
 .resume-item p {
