@@ -388,9 +388,32 @@ footer {
   margin-bottom: 1rem;
 }
 
+.project-description p {
+  line-height: 1.5;  /* smaller than 1.75 for tighter spacing */
+  margin-bottom: 1rem;
+}
+
+.project-embed ul li {
+  margin-bottom: 0.5rem;  /* less spacing between items */
+}
+
 .embed-container {
   margin-top: 2rem;
 }
+
+.project-embed ul {
+  text-align: left;   /* Align bullets to the left */
+  padding-left: 1.5rem; /* Standard bullet indent */
+  margin: 0 auto 1rem auto; /* Optional: centers the block but keeps left-aligned bullets */
+}
+
+.project-embed ul {
+  max-width: 900px;
+  margin: 0 auto 1rem auto;
+  text-align: left;
+  padding-left: 1.5rem;
+}
+
 
 /* =====================================================
    Button
