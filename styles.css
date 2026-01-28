@@ -426,7 +426,42 @@ footer {
   max-width: 600px;
   margin: 0 auto;
 }
+.resume-item {
+  display: block;               /* anchor behaves like a card */
+  border: 2px solid #2e8b57;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  background: #e9f2e6;
+  cursor: pointer;
+  text-decoration: none;        /* remove underline */
+  color: inherit;               /* prevent link blue */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
 
+.resume-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  text-decoration: none;        /* override global a:hover */
+}
+
+.resume-item h3 {
+  color: #2e8b57;
+  font-size: 1.8rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.resume-item p {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #2e8b57;
+  font-weight: 600;
+}
+
+
+
+
+/* ========== REMOVED
 .resume-item {
   border: 2px solid #2e8b57;
   border-radius: 10px;
@@ -463,4 +498,4 @@ footer {
 .resume-item a:hover {
   text-decoration: underline;
 }
-
+========================= */
