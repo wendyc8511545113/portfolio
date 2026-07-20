@@ -1,1 +1,154 @@
-here
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- =====================================================
+       EDITABLE: Page title (browser tab)
+       Change "Page Header Here" to your page/project name
+  ====================================================== -->
+  <title>Page Header Here | Wendy Caffey</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- =====================================================
+       Fonts (OPTIONAL)
+       Swap fonts here if desired
+  ====================================================== -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- =====================================================
+       Main stylesheet
+       EDIT COLORS + STYLES in styles.css
+  ====================================================== -->
+  <link rel="stylesheet" href="../styles.css">
+
+  <!-- =====================================================
+       FontAwesome icons (do not edit unless upgrading)
+  ====================================================== -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+
+<body>
+
+<!-- Floating Certification Icon -->
+<div class="floating-cert-icon">
+    <i class="fa-brands fa-google"></i>
+</div>
+
+<!-- =====================================================
+     HEADER SECTION (Consistent across site)
+===================================================== -->
+<header class="project-header">
+
+  <!-- EDITABLE: Name text -->
+  <div class="intro-header">
+    <h1>Wendy Caffey</h1>
+  </div>
+
+  <!-- EDITABLE: Profile image -->
+  <!-- Replace image path if needed -->
+  <div class="profile-photo-container">
+    <img src="../assets/profile.jpg" alt="Profile Photo" class="profile-photo">
+  </div>
+
+  <!-- Home icon (leave as-is for navigation consistency) -->
+  <div class="header-home-icon">
+    <a href="../index.html" aria-label="Return Home">
+      <i class="fa-solid fa-house"></i>
+    </a>
+  </div>
+
+</header>
+
+<!-- =====================================================
+     MAIN CONTENT
+===================================================== -->
+<main>
+
+  <!-- =====================================================
+       PAGE HEADER / HIGHLIGHTS
+       MOST COMMONLY EDITED SECTION
+  ====================================================== -->
+  <section class="project-header-info">
+
+    <!-- EDITABLE: Main page heading -->
+    <h2>Page Header Here</h2>
+
+    <!-- Divider line (style controlled in CSS) -->
+    <hr class="divider">
+
+    <!-- EDITABLE: Short highlights / tags -->
+    <p class="subheading">
+      Highlight 1 | Highlight 2 | Highlight 3
+    </p>
+  </section>
+
+  <!-- =====================================================
+       PROJECT / PAGE DESCRIPTION
+  ====================================================== -->
+  <section class="project-description">
+
+    <!-- EDITABLE: Section title -->
+    <h2>Project Overview</h2>
+
+    <!-- EDITABLE: Description text -->
+    <p>
+      Write your project description here.
+      Explain the purpose, goals, audience, or tools used.
+    </p>
+  </section>
+
+  <!-- =====================================================
+       EMBED / CODE / MEDIA SECTION
+  ====================================================== -->
+  <section class="project-embed">
+
+    <!-- EDITABLE: Section title -->
+    <h2>Embed / Code</h2>
+
+    <!-- EDITABLE: Embed container -->
+    <div class="embed-container">
+      <!-- 
+        Paste embed code here:
+        - iframe
+        - CodePen
+        - JSFiddle
+        - Video
+      -->
+    </div>
+  </section>
+
+</main>
+
+<!-- =====================================================
+     FOOTER (Usually site-wide)
+===================================================== -->
+<footer>
+
+  <!-- EDITABLE: Social links -->
+  <div class="footer-icons">
+    <a href="mailto:wendycaffey@gmail.com" aria-label="Email">
+      <i class="fa-solid fa-envelope"></i>
+    </a>
+
+    <a href="https://www.linkedin.com/in/wendy-caffey/" target="_blank" aria-label="LinkedIn">
+      <i class="fa-brands fa-linkedin-in"></i>
+    </a>
+  </div>
+
+  <!-- EDITABLE: Copyright year -->
+  <p>&copy; 2026 Wendy Caffey</p>
+
+</footer>
+
+<!-- OPTIONAL: JavaScript -->
+<script src="../script.js"></script>
+
+</body>
+</html>
