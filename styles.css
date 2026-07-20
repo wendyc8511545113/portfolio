@@ -508,3 +508,11 @@ footer {
 
     z-index:1000;
 }
+/* Optional hover effect */
+
+.floating-cert-icon:hover {
+
+    transform: scale(1.05);
+    transition: 0.3s ease;
+
+}
