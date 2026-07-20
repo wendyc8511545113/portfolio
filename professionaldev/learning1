@@ -26,7 +26,7 @@
 <body>
 
 <!-- =====================================================
-     FLOATING CERTIFICATION ICON
+     FLOATING CERTIFICATION ICON - change per cert
 ===================================================== -->
 
 <div class="floating-cert-icon">
@@ -41,6 +41,21 @@
 
   <!-- Microsoft -->
   <!-- <i class="fa-brands fa-microsoft"></i> -->
+
+  <!-- GitHub -->
+  <!-- <i class="fa-brands fa-github"></i> -->
+
+  <!-- Python -->
+  <!-- <i class="fa-brands fa-python"></i> -->
+
+  <!-- Databse-related -->
+  <!-- <i class="fa-brands fa-database"></i> -->
+
+  <!-- AI-related -->
+  <!-- <i class="fa-brands fa-robot"></i> -->
+
+  <!-- Learning & Training in general -->
+  <!-- <i class="fa-brands fa-graduation-cap"></i> -->
 
 </div>
 
