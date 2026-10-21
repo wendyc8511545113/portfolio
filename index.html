@@ -3,49 +3,65 @@
 <head>
   <meta charset="UTF-8">
 
-  <!-- =====================================================
-       PAGE TITLE (Browser Tab)
-  ====================================================== -->
-  <title>Wendy Caffey | Portfolio</title>
+  <title>Education | Wendy Caffey</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- =====================================================
-       Fonts (Playfair Display for headings, Inter for body)
-  ====================================================== -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <meta
+    name="description"
+    content="Explore Wendy Caffey’s academic background in data science, cloud computing, curriculum and instruction, and interdisciplinary studies."
+  >
 
-  <!-- =====================================================
-       Main CSS (Edit styles in styles.css)
-  ====================================================== -->
-  <link rel="stylesheet" href="styles.css">
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  >
 
-  <!-- =====================================================
-       FontAwesome Icons
-  ====================================================== -->
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="../styles.css">
+
+  <!-- Font Awesome -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
-  />
+  >
 </head>
 
 <body>
 
 <!-- =====================================================
-     HEADER SECTION
+     FLOATING EDUCATION ICON
 ===================================================== -->
-<header class="header-section">
 
-  <!-- Name / Branding -->
+<div class="floating-cert-icon" aria-hidden="true">
+  <i class="fa-solid fa-graduation-cap"></i>
+</div>
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="project-header">
+
   <div class="intro-header">
     <h1>Wendy Caffey</h1>
   </div>
 
-  <!-- Profile Photo -->
   <div class="profile-photo-container">
-    <img src="assets/profile.jpg" alt="Profile Photo" class="profile-photo">
+    <img
+      src="../assets/profile.jpg"
+      alt="Wendy Caffey"
+      class="profile-photo"
+    >
+  </div>
+
+  <div class="header-home-icon">
+    <a href="../index.html" aria-label="Return Home">
+      <i class="fa-solid fa-house" aria-hidden="true"></i>
+    </a>
   </div>
 
 </header>
@@ -53,143 +69,260 @@
 <!-- =====================================================
      MAIN CONTENT
 ===================================================== -->
+
 <main>
 
-  <!-- =====================================================
-       ABOUT ME SECTION
-  ====================================================== -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p><h3>Instructional Design & Technology  |  Learning & Training Developer</h3></p>
-    <p style="white-space: nowrap; text-align: center;">
-      With a background in education and instructional design, I build learning systems and technical solutions that connect pedagogy with software, data, and user experience.
+  <!-- PAGE HEADER -->
+  <section
+    class="project-header-info"
+    aria-labelledby="education-title"
+  >
+
+    <h2 id="education-title">Education &amp; Academic Background</h2>
+
+    <hr class="divider">
+
+    <p class="subheading">
+      Education | Learning Design | Data Science | Cloud Technology
     </p>
-    <p style="white-space: nowrap; text-align: center;">
-      This brings a learner-centered mindset to designing scalable training solutions while continuing to build skills in web development and learning engineering.
-    </p>
+
   </section>
-  
- <!-- =====================================================
-       RESUME SECTION
-  ====================================================== -->
-<section id="resume-tile">
-  <div class="resume-container">
-    <a href="projects/resume.html" class="resume-item">
-      <h3>Resume</h3>
-      <p>View Wendy’s Resume Here →</p>
-    </a>
-  </div>
-</section>
 
+  <!-- EDUCATION OVERVIEW -->
+  <section
+    class="project-description"
+    aria-labelledby="education-overview"
+  >
 
-  <!-- ===================================
-     Professional Development Section
-====================================== -->
-<section id="portfolio">
-  <h2>Professional Development</h2>
-  <h3 class="section-subtitle">
-    A lifelong learner never stops - below are my current certs and trainings ↓
-  </h3>
+    <h2 id="education-overview">Where Learning Meets Technology</h2>
 
-  <!-- Portfolio container (flexible grid rows) -->
-  <div class="portfolio-container">
+    <p>
+      My academic background connects education, instructional
+      research, and technology. These fields shape how I approach
+      learning design, organize digital experiences, and support
+      learners with different needs.
+    </p>
 
-    <!-- Row 1 (white background) -->
-    <div class="portfolio-row white-row">
-      <div class="portfolio-item" onclick="location.href='professionaldev/learning3.html';">
-          <h3>Education Background</h3>
-          <p>M.S. | M.Ed. | B.S. | A.A.S.</p>
-        </div>
-      </div>
-      
-      <div class="portfolio-item" onclick="location.href='professionaldev/learning1.html';">
-        <h3>Google Data Analytics</h3>
-        <p>Data Analytics | SQL | Tableau | Data Visualization</p>
-      </div>
-   
-      <div class="portfolio-item" onclick="location.href='professionaldev/learning2.html';">
-        <h3>Linux Essentials</h3>
-        <p>Linux OS | Command Line Interface | System Administrator Basics</p>
-      </div>
-    
-  </div>
-</section>
+    <p>
+      Through classroom teaching, online course development, and
+      educational operations, I apply this foundation to creating
+      clear instructional resources and practical learning solutions.
+      My continued studies in data science expand this foundation
+      into analytical problem-solving.
+    </p>
 
-  
-<!-- =========================
-     Portfolio Section
-========================= -->
-<section id="portfolio">
-  <h2>Portfolio</h2>
-  <h3 class="section-subtitle">
-    Check out some of my various projects ↓
-  </h3>
+  </section>
 
-  <!-- Portfolio container (flexible grid rows) -->
-  <div class="portfolio-container">
+  <!-- MASTER OF SCIENCE — IN PROGRESS -->
+  <section
+    class="project-description"
+    aria-labelledby="data-science-degree"
+  >
 
-    <!-- Row 1 (green background) -->
-    <div class="portfolio-row green-row">
-      <div class="portfolio-item" onclick="location.href='projects/project1.html';">
-        <h3>Virtual Learning Study</h3>
-        <p>Research-Based Design • Instructional Analysis • Learner Engagement Evaluation 🌟</p>
-      </div>
+    <h2 id="data-science-degree">Master of Science</h2>
+    <h3>Data Science</h3>
 
-      <div class="portfolio-item" onclick="location.href='projects/project2.html';">
-        <h3>Interactive Planner</h3>
-        <p>Google Sheets • Dynamic • Organizational Tool 🎨</p>
-      </div>
+    <p>
+      <strong>In Progress</strong><br>
+      Began October 2026 | Expected Graduation: 2027
+    </p>
 
-      <div class="portfolio-item" onclick="location.href='projects/project3.html';">
-        <h3>Pre-K Online & Hybrid Expectations</h3>
-        <p>Early Childhood Education • Setting Expectations • Online & Hybrid Learning • Parent Support 🚀</p>
-      </div>
-    </div>
+    <p>
+      I am pursuing a Master of Science in Data Science to expand
+      my analytical and technical skills. This program builds on
+      my background in curriculum and instruction and my experience
+      supporting online education programs.
+    </p>
 
-    <!-- Row 2 (white background) -->
-    <div class="portfolio-row white-row">
-      <div class="portfolio-item" onclick="location.href='projects/project4.html';">
-        <h3>Interactive Science Notebook</h3>
-        <p>LMS Integration | Digital Learning Modules | Interactive Learning 🧪 </p>
-      </div>
-     
-      <div class="portfolio-item" onclick="location.href='projects/project5.html';">
-        <h3>Vibe Coding Microlearning</h3>
-        <p>Curriculum Development | AI Literacy | Microlearning 🤖 </p>
-      </div>
-   
-      <div class="portfolio-item" onclick="location.href='projects/project6.html';">
-        <h3>Creating Canvas</h3>
-        <p>Instructional Design | Canvas Course Development | Educator Training 💻</p>
-      </div>
-    </div>
-   
-    <!-- Add more rows here (alternate white-row / green-row) -->
-    
-  </div>
-</section>
+    <p>
+      My goal is to connect learning design, educational operations,
+      and data analysis to better understand learner needs, evaluate
+      processes, and guide improvements.
+    </p>
+
+  </section>
+
+  <!-- CLOUD COMPUTING -->
+  <section
+    class="project-description"
+    aria-labelledby="cloud-computing-degree"
+  >
+
+    <h2 id="cloud-computing-degree">Cloud Computing Studies</h2>
+    <h3>Associate of Applied Science Program</h3>
+
+    <p>
+      <strong>Lone Star College</strong><br>
+      Montgomery, Texas | 2026
+    </p>
+
+    <p>
+      My studies in cloud computing expand the technical side of my
+      education background. This learning supports my interest in
+      understanding how digital systems work and how technology
+      can support instruction and operational processes.
+    </p>
+
+    <p>
+      Paired with my experience in education, this technical
+      perspective helps me connect learner needs with the tools
+      and systems used to deliver online experiences.
+    </p>
+
+  </section>
+
+  <!-- MASTER OF EDUCATION -->
+  <section
+    class="project-description"
+    aria-labelledby="education-masters-degree"
+  >
+
+    <h2 id="education-masters-degree">Master of Education</h2>
+    <h3>Curriculum &amp; Instruction</h3>
+
+    <p>
+      <strong>Sam Houston State University</strong><br>
+      Huntsville, Texas | 2021
+    </p>
+
+    <p>
+      My graduate education deepened my understanding of curriculum
+      and instruction and strengthened the research foundation
+      behind my approach to learning design.
+    </p>
+
+    <p>
+      My graduate research examined virtual classroom methodologies
+      related to student attendance and participation, connecting
+      educational research with practical questions about engagement
+      in online learning.
+    </p>
+
+    <p>
+      <a href="../projects/project1.html">
+        Explore My Graduate Research →
+      </a>
+    </p>
+
+  </section>
+
+  <!-- BACHELOR OF SCIENCE -->
+  <section
+    class="project-description"
+    aria-labelledby="bachelors-degree"
+  >
+
+    <h2 id="bachelors-degree">Bachelor of Science</h2>
+    <h3>Interdisciplinary Studies</h3>
+
+    <p>
+      <strong>Sam Houston State University</strong><br>
+      Huntsville, Texas | 2019
+    </p>
+
+    <p>
+      My undergraduate education established the foundation for my
+      teaching career. I have continued to build on that foundation
+      through instructional planning, classroom teaching, and
+      developing resources for students and families.
+    </p>
+
+    <p>
+      These experiences inform how I explain concepts, scaffold
+      learning activities, and organize content for different audiences.
+    </p>
+
+    <p>
+      <a href="../projects/project6.html">
+        Explore My Canvas Course Design →
+      </a>
+    </p>
+
+  </section>
+
+  <!-- APPLIED LEARNING -->
+  <section
+    class="project-description"
+    aria-labelledby="education-in-practice"
+  >
+
+    <h2 id="education-in-practice">Education in Practice</h2>
+
+    <p>
+      My portfolio shows how I translate my academic background
+      into instructional resources, digital tools, and learning
+      experiences.
+    </p>
+
+    <h3>
+      <a href="../projects/project1.html">
+        Virtual Learning Study
+      </a>
+    </h3>
+
+    <p>
+      Research examining attendance and participation in virtual
+      classrooms and the implications for online instruction.
+    </p>
+
+    <h3>
+      <a href="../projects/project6.html">
+        Canvas Course Design
+      </a>
+    </h3>
+
+    <p>
+      Course organization, family onboarding, and educator
+      walkthroughs that demonstrate my approach to digital learning.
+    </p>
+
+    <h3>
+      <a href="../projects/project5.html">
+        AI Literacy Microlearning
+      </a>
+    </h3>
+
+    <p>
+      A guided learning experience introducing students to
+      AI-assisted problem-solving through prompts, reflection,
+      and iteration.
+    </p>
+
+  </section>
+
 </main>
 
 <!-- =====================================================
      FOOTER
 ===================================================== -->
+
 <footer>
 
   <div class="footer-icons">
-    <a href="mailto:wendycaffey@gmail.com" aria-label="Email">
-      <i class="fa-solid fa-envelope"></i>
+
+    <a
+      href="mailto:wendycaffey@gmail.com"
+      aria-label="Email Wendy Caffey"
+    >
+      <i class="fa-solid fa-envelope" aria-hidden="true"></i>
     </a>
-    <a href="https://www.linkedin.com/in/wendy-caffey/" target="_blank" aria-label="LinkedIn">
-      <i class="fa-brands fa-linkedin-in"></i>
+
+    <a
+      href="https://www.linkedin.com/in/wendy-caffey/"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Wendy Caffey on LinkedIn (opens in a new tab)"
+    >
+      <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
     </a>
+
   </div>
 
   <p>&copy; 2026 Wendy Caffey</p>
 
 </footer>
 
-<!-- OPTIONAL: JavaScript -->
-<script src="script.js"></script>
+<script src="../script.js"></script>
 
 </body>
 </html>
