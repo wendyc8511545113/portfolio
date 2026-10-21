@@ -78,6 +78,38 @@ main {
 .header-home-icon {
   position: absolute;
   right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 20;
+}
+
+.header-home-icon a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: #2e8b57;
+  color: #ffffff;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  text-decoration: none;
+}
+
+.header-home-icon a:hover {
+  background-color: #3cb371;
+  transform: translateY(-2px);
+}
+
+/* =====================================================
+   5. Shared Action Buttons
+===================================================== */
+.button {
+  display: inline-block;
+  padding: 0.8rem 1.8rem;
+  background-color: #2e8b57;
+  color: #ffffff;
   font-weight: 600;
   font-family: 'Inter', sans-serif;
   font-size: 1rem;
@@ -244,6 +276,32 @@ footer {
   background: #e9f2e6;
 }
 
+/* =====================================================
+   10. Index — Portfolio Cards
+===================================================== */
+.portfolio-item {
+  border: 2px solid #2e8b57;
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  text-align: center;
+  background: inherit;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.portfolio-item h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #2e8b57;
+  font-size: 1.2rem;
+}
+
+.portfolio-item p {
   margin: 0;
   font-size: 1rem;
   line-height: 1.4;
